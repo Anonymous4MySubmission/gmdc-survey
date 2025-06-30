@@ -76,11 +76,11 @@
     }
     .circle-solid::before {
       content: "\25CF";
-      font-size: 20px
+      font-size: 17px
     }
     .circle-shallow::before {
       content: "\25CB";
-      font-size: 20px
+      font-size: 17px
     }
     .table-head-size {
       font-size: 17px;
@@ -747,7 +747,7 @@
 
 
         <tr style='padding=3px'>
-          <td class="has-text-centered table-row-head-size" style="width:10px vertical-align: middle">
+          <td class="has-text-centered table-row-head-size" style="width: 10%; vertical-align: middle">
             <b>Description:</b>
           </td>
           <td colspan="3" style="vertical-align: middle">
@@ -756,7 +756,7 @@
           </td>
         </tr>
         <tr style='padding=3px'>
-          <td class="has-text-centered table-row-head-size" style="vertical-align: middle">
+          <td class="has-text-centered table-row-head-size" style="width: 10%; vertical-align: middle">
             <b>Task:</b>
           </td>
           <td style="vertical-align: middle">
@@ -765,7 +765,7 @@
             cGM-2 <span class="circle-solid"></span> &nbsp cGM-3 <span class="circle-solid"></span> &nbsp
             IGM <span class="circle-shallow"></span> &nbsp SGM <span class="circle-solid"></span>
           </td>
-          <td class="has-text-centered table-row-head-size" style="vertical-align: middle">
+          <td class="has-text-centered table-row-head-size" style="width: 15%; vertical-align: middle">
             <b>Data constraint:</b>
           </td>
           <td style="vertical-align: middle">
@@ -794,7 +794,7 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>1) Regularizer-based Fine-Tuning:</b> Explore regularizers to preserve source generators' knowledge.
             <br>
             <i>Methods:</i> &nbsp TGAN, BSA, FreezeD, EWC, CDC, cGANTransfer, W<sup>3</sup>, C<sup>3</sup>, DCL, RSSA, fairTL, GenOS\citep{zhang2022generalizedoneshot}
@@ -830,7 +830,7 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>2) Latent Space:</b> Explore latent space of source generator to identify suitable knowledge for adaptation.
             <br>
             <i>Methods:</i> &nbsp MineGAN, MineGAN++,
@@ -845,14 +845,14 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>3) Modulation:</b> Leverage trainable modulation weights on top of frozen weights of the source generator.
             <br>
             <i>Methods:</i> &nbsp AdaFMGAN, GAN-Memory, CAM-GAN, AdAM, DynaGAN, HyperDomainNet, NICE, A<sup>3</sup>FT, LFS-GAN, OKM, CFTS-GAN, HyperGAN-CLIP, DPH, DoRM, Mix-of-Show, Orthogonal Adaptation, DreamMatcher, PortraitBooth, DisenDiff, RealCustom
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>4) Natural Language-guided:</b> Use the feedback of vision-language models to adapt the source generator with text prompts.
             <br>
             <i>Methods:</i> &nbsp StyleGAN-NADA, MTG, HyperDomainNet, DiFa, OneCLIP, IPL, SVL, AIR, StyleGAN-Fusion, UniHDA,
@@ -864,14 +864,14 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>5) Adaptation-Aware:</b> Preserve the source generator's knowledge that is important to the adaptation task.
             <br>
             <i>Methods:</i> &nbsp AdAM, RICK, OKM
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>6) Prompt Tuning:</b> Freeze the source generator and add/ generate visual prompts to guide generation for the target domain.
             <br>
             <i>Methods:</i> &nbsp VPT
@@ -933,7 +933,7 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>1) Image-Level Augmentation:</b> Apply data transformations on image space.
             <br>
             <i>Methods:</i> &nbsp ADA, DiffAugment, IAG, DiffusionGAN, bCR, CR-GAN, APA, PatchDiffusion,
@@ -943,15 +943,14 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>2) Feature-Level Augmentation:</b> Apply data transformations on the feature space.
             <br>
-            <i>Methods:</i> &nbsp AdvAug, AFI,
-            FSMR
+            <i>Methods:</i> &nbsp AdvAug, AFI, FSMR
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>3) Transformation-Driven Design:</b> Leverage the information of individual transformations to design an efficient learning mechanism.
             <br>
             <i>Methods:</i> &nbsp DAG, SSGAN-LA
@@ -1013,7 +1012,7 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>1) Feature Enhancement:</b> Design additional modules/ layers to enhance/retain the feature maps of the generator for better generative modeling.
             <br>
             <i>Methods:</i> &nbsp FastGAN,
@@ -1025,7 +1024,7 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>2) Ensemble Large Pre-trained Vision Models:</b> Improve architecture by integrating pre-trained vision models to enable more accurate GM-DC.
             <br>
             <i>Methods:</i> &nbsp ProjectedGAN,
@@ -1036,14 +1035,10 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>3) Dynamic Network Architecture:</b> Improve generative learning with limited data by evolving the generator architecture during training.
             <br>
-            <i>Methods:</i> &nbsp CbC,
-            PYP,
-            DynamicD, AdvAug, Re-GAN,
-            RG-GAN,
-            AutoInfoGAN
+            <i>Methods:</i> &nbsp CbC, PYP, DynamicD, AdvAug, Re-GAN, RG-GAN, AutoInfoGAN
           </td>
         </tr>
 
@@ -1102,14 +1097,14 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>1) Regularizer:</b> Add an additional task objective as a regularizer to prevent an undesirable behaviour during training generative model.
             <br>
             <i>Methods:</i> &nbsp LeCam, DigGAN, MDL, RegLA
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>2) Contrastive Learning:</b> Introduce a pretext task to enhance the learning process of the generative model.
             <br>
             <i>Methods:</i> &nbsp InsGen, FakeCLR, DCL, C<sup>3</sup>, ctlGAN, IAG, CML-GAN, RCL
@@ -1117,28 +1112,28 @@
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>3) Masking:</b> Mask a part of the image/ information to increase the task hardness and prevent learning the trivial solutions.
             <br>
             <i>Methods:</i> &nbsp MaskedGAN, MaskD, DMD
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>4) Knowledge Distillation:</b> Add a task objective that enforces the generator to follow a strong teache.
             <br>
             <i>Methods:</i> &nbsp KD-DLGAN, KDFSIG, BK-SDM
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>5) Prototype Learning:</b> Emphasize learning prototypes for samples/ concepts within the distribution as an additional task objective.
             <br>
             <i>Methods:</i> &nbsp ProtoGAN, MoCA
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>6) Other Multi-Task Objectives:</b> Apply other types of multi-task objectives including co-training, patch-level learning, and diffusion.
             <br>
             <i>Methods:</i> &nbsp GenCo, PatchDiffusion, AnyRes-GAN , DiffusionGAN, D2C, AdaptiveIMLE, RS-IMLE, FSDM, SpiderGAN
@@ -1200,7 +1195,7 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <i>Methods:</i> &nbsp FreGAN, WaveGAN, MaskedGAN, Gen-co, FAGAN, SDTM
           </td>
         </tr>
@@ -1260,21 +1255,21 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>1) Optimization:</b> Learn initialization weights from the seen classes as meta-knowledge to enable quick adaptation to unseen classes.
             <br>
             <i>Methods:</i> &nbsp GMN, FIGR, Dawson, FAML, CML-GAN
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>2) Transformation:</b> Learn sample transformations from the seen classes as meta-knowledge and use them for sample generation for unseen classes.
             <br>
             <i>Methods:</i> &nbsp DAGAN, DeltaGAN, Disco, AGE, SAGE, HAE, LSO, TAGE, CDM, ISSA, MFH
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>3) Fusion:</b> Learn to fuse the samples of the seen classes as meta-knowledge, and apply learned meta-knowledge to generation for unseen classes.
             <br>
             <i>Methods:</i> &nbsp MatchingGAN, F2GAN, LofGAN, WaveGAN, AMMGAN, MVSA-GAN, EqGAN, SDTM, SMR-CSL, SAGAN, F2DGAN
@@ -1337,14 +1332,14 @@
 <!--          </td>-->
 <!--        </tr>-->
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>1) Progressive Training:</b> Train a generative model progressively to learn the patch distribution at different scales/ noise levels.
             <br>
             <i>Methods:</i> &nbsp SinDiffusion, SinDDM, Deff-GAN, BlendGAN, SinGAN, ConSinGAN, CCASinGAN, PromptSDM, LatentSDM, SD-SGAN, SA-SinGAN, ExSinGAN, TcGAN, RecurrentSinGAN
           </td>
         </tr>
         <tr>
-          <td colspan="4">
+          <td colspan="4" class="content has-text-justified">
             <b>2) Non-progressive Training:</b> Train a generative model on the same scale/ noise but with changes to the model’s architecture.
             <br>
             <i>Methods:</i> &nbsp SinFusion, One-Shot GAN, PetsGAN
